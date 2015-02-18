@@ -3,8 +3,14 @@ package com.test;
 public class HelloTest {
 
 	public static void main(String[] args) {
-		System.out.println("HelloWorld");
-		System.out.println("Hello123");
-		System.out.println("Hello P");
+		SalesData data = new SalesData();
+		
+		displayGreeting();
+		data.display();
+	}
+	
+	private static void displayGreeting() {
+		System.out.println("Hello Happy Sales People!");
+		System.out.println("This app shows sales data");
 	}
 }
